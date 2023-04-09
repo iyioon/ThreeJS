@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Intro Script";
+  src: url("/fonts/intro-script.woff2") format("woff2"),
+    url("/fonts/intro-script.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+  width: 100vh;
+  color: white;
+  z-index: 99;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
+  grid-column: 2/8; /*start at 2 col and end at 8 col*/
+  height: 100vh;
+  padding: 100px;
+  /*border: 2px solid red;*/
+}
+
+.intro h1 {
+  font-size: 100px;
+  font-family: "Intro Script", sans-serif;
+  margin-bottom: 10%;
+}
+
+h1 {
+  font-size: 100px;
+  margin-bottom: 10%;
+}
+
+p {
+  font-size: 30px;
+}
+
+.intro p {
+  margin: 0;
+}
