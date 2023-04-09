@@ -38,6 +38,7 @@ function animate() {
   requestAnimationFrame(animate);
   controls.update();
   renderer.render(scene, camera);
+  renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
 animate();
