@@ -28,17 +28,13 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-color: rgba(0, 0, 0, 0.5);
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 section {
   scroll-snap-align: start;
-  grid-column: 2/8; /*start at 2 col and end at 8 col*/
+  grid-column: 2/10; /*start at 2 col and end at 8 col*/
   height: 1000vh;
   padding: 100px;
-  /*border: 2px solid red;*/
 }
 
 .intro h1 {
