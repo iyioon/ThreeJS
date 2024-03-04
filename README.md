@@ -1,2 +1,2 @@
-# Three js scene 
+# Simple three js scene 
 
